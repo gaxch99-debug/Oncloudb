@@ -1,0 +1,288 @@
+header .header-actions {
+    margin-left: auto !important;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.acessibilidade-container {
+    position: relative;
+    margin: auto;
+}
+
+.btn-acessibilidade {
+    background-color: #F0F4FF;
+    color: #0066FF;
+    border: 1px solid #94C1FF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.btn-acessibilidade:hover {
+    background-color: #0066FF;
+    color: #FFFFFF;
+    transform: scale(1.05);
+}
+
+.painel-acessibilidade {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 260px;
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.painel-acessibilidade.hidden {
+    display: none !important;
+}
+
+.painel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E2E8F0;
+    padding-bottom: 8px;
+}
+
+.painel-header h3 {
+    font-size: 16px;
+    color: #0F1A30;
+    margin: 0;
+}
+
+.painel-header button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #718096;
+    cursor: pointer;
+}
+
+.painel-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.opcao-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.opcao-grupo label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #718096;
+}
+
+.botoes-tamanho {
+    display: flex;
+    gap: 6px;
+}
+
+.botoes-tamanho button,
+.btn-opcao {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    background-color: #F8FAFC;
+    color: #0F1A30;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.botoes-tamanho button:hover,
+.btn-opcao:hover {
+    background-color: #E2E8F0;
+}
+
+.btn-opcao.ativo {
+    background-color: #0066FF !important;
+    color: #FFFFFF !important;
+    border-color: #0066FF !important;
+}
+
+.btn-reset {
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: #FFF5F5;
+    color: #E53E3E;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.btn-reset:hover {
+    background-color: #FED7D7;
+}
+
+/* alto contraste */
+body.alto-contraste,
+body.alto-contraste main,
+body.alto-contraste section,
+body.alto-contraste header,
+body.alto-contraste footer,
+body.alto-contraste article,
+body.alto-contraste div:not(.simg),
+body.alto-contraste .top-head,
+body.alto-contraste .cloud,
+body.alto-contraste .quem,
+body.alto-contraste .container-cards,
+body.alto-contraste .card,
+body.alto-contraste .face,
+body.alto-contraste .sites,
+body.alto-contraste .solugrid,
+body.alto-contraste .site-card,
+body.alto-contraste .painel-acessibilidade {
+    background-color: #000000 !important;
+    background: #000000 !important;
+    color: #FFE600 !important;
+    border-color: #FFE600 !important;
+    box-shadow: none !important;
+}
+
+body.alto-contraste h1,
+body.alto-contraste h2,
+body.alto-contraste h3,
+body.alto-contraste p,
+body.alto-contraste span,
+body.alto-contraste a,
+body.alto-contraste label,
+body.alto-contraste i {
+    color: #FFE600 !important;
+    background-color: transparent !important;
+}
+
+body.alto-contraste .bottom-top,
+body.alto-contraste .bottom-down,
+body.alto-contraste button,
+body.alto-contraste .visitar-site,
+body.alto-contraste .menu-bottao,
+body.alto-contraste .btn-acessibilidade {
+    background-color: #000000 !important;
+    color: #FFE600 !important;
+    border: 2px solid #FFE600 !important;
+}
+
+body.alto-contraste .bottom-top:hover,
+body.alto-contraste .bottom-down:hover,
+body.alto-contraste button:hover,
+body.alto-contraste .visitar-site:hover {
+    background-color: #FFE600 !important;
+    color: #000000 !important;
+}
+
+/* adaptação img*/
+
+/*  Imagens gerais e vídeos */
+body.alto-contraste img,
+body.alto-contraste video {
+    filter: contrast(125%) brightness(105%) !important;
+    opacity: 1 !important;
+    border: 2px solid #FFE600 !important;
+    border-radius: 8px;
+}
+
+/*  Caixas de Ícones dos Planos e Preços */
+body.alto-contraste .simg {
+    background-color: #FFE600 !important;
+    border: 2px solid #FFE600 !important;
+    border-radius: 16px !important;
+}
+
+body.alto-contraste .simg img {
+    border: none !important;
+    filter: brightness(0) !important; /* Transforma o ícone azul em preto para contraste perfeito sobre o fundo amarelo */
+}
+
+/*  Ícones do Carrossel de Projetos */
+body.alto-contraste .site-card img,
+body.alto-contraste .icone-site,
+body.alto-contraste .card-icon {
+    background-color: #000000 !important;
+    border: 2px solid #FFE600 !important;
+    box-shadow: 0 0 8px #FFE600 !important;
+}
+
+/*  Fotos da equipe/membros (Cards) */
+body.alto-contraste .frente img {
+    border: 2px solid #FFE600 !important;
+}
+
+/* destacar links */
+body.destacar-links a,
+body.destacar-links a *,
+body.destacar-links button:not(.btn-acessibilidade),
+body.destacar-links button:not(.btn-acessibilidade) * {
+    background-color: #FFE600 !important;
+    color: #000000 !important;
+    outline: 3px solid #000000 !important;
+    font-weight: 900 !important;
+    text-decoration: underline !important;
+    text-shadow: none !important;
+}
+
+/* espaçamento */
+body.espacamento-aumentado,
+body.espacamento-aumentado * {
+    letter-spacing: 0.15em !important;
+    word-spacing: 0.25em !important;
+    line-height: 2 !important;
+}
+
+/* botões carrossel */
+body.alto-contraste .carrossel::scroll-button(right),
+body.alto-contraste .carrossel::scroll-button(left) {
+    background-color: #000000 !important;
+    color: #FFE600 !important;
+    border: 2px solid #FFE600 !important;
+    box-shadow: none !important;
+}
+
+body.alto-contraste .carrossel::scroll-button(right):not(:disabled):hover,
+body.alto-contraste .carrossel::scroll-button(left):not(:disabled):hover {
+    background-color: #FFE600 !important;
+    color: #000000 !important;
+}
+
+/* linhas azuis */
+
+body.alto-contraste .titulo-projetos::after,
+body.alto-contraste .titleCards::after,
+body.alto-contraste .titleC::after {
+    background-color: #FFE600 !important;
+}
+
+body.alto-contraste .headerNav a::after {
+    background-color: #FFE600 !important;
+}
+
+body.alto-contraste .headerNav a:hover {
+    color: #FFE600 !important;
+}
+body.alto-contraste .headerNav a:hover::after {
+    background-color: #FFE600 !important;
+}

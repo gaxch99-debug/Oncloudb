@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.Oncloud.jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/acessibilidade.css">
+    <link rel="stylesheet" href="css/solucoes.css">
+    <title>Oncloud</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="img/logo.on.png" alt="Logo OnCloud" width="50px">
+            <p><span class="oncloud">On</span>Cloud</p>
+        </div>
+        
+        <nav class="headerNav">
+            <a href="#">Início</a>
+            <a href="#sobreNos">Sobre nós</a>
+            <a href="#Valores" class="idd">Valores</a>
+            <a href="#Projetos" class="idd">Projetos</a>
+        </nav>
+
+        <div class="menu-bottao idd">
+            <a href="#solucoes1">Fale conosco</a>
+        </div>
+
+        <div>
+            <!-- Acessibilidade -->
+            <button id="btn-acessibilidade" class="btn-acessibilidade" title="Acessibilidade" aria-label="Acessibilidade">
+                ◉
+            </button>
+
+            <div id="painel-acessibilidade" class="painel-acessibilidade hidden">
+                <div class="painel-header">
+                    <h3>Acessibilidade</h3>
+                    <button id="fechar-acessibilidade">&times;</button>
+                </div>
+                
+                <div class="painel-body">
+                    <div class="opcao-grupo">
+                        <label>Tamanho do Texto</label>
+                        <div class="botoes-tamanho">
+                            <button id="diminuir-fonte">A-</button>
+                            <button id="resetar-fonte">Normal</button>
+                            <button id="aumentar-fonte">A+</button>
+                        </div>
+                    </div>
+
+                    <div class="opcao-grupo">
+                        <button id="toggle-contraste" class="btn-opcao">
+                            <i class="fa-solid fa-circle-half-stroke"></i> Alto Contraste
+                        </button>
+                    </div>
+
+                    <div class="opcao-grupo">
+                        <button id="toggle-links" class="btn-opcao">
+                            <i class="fa-solid fa-link"></i> Destacar Links
+                        </button>
+                    </div>
+
+                    <div class="opcao-grupo">
+                        <button id="toggle-espacamento" class="btn-opcao">
+                            <i class="fa-solid fa-text-height"></i> Espaçamento
+                        </button>
+                    </div>
+
+                    <div class="opcao-grupo">
+                        <button id="resetar-tudo" class="btn-reset">
+                            Redefinir
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero / Banner inicial -->
+        <article class="top-head">  
+            <article>
+                <div class="text-top">
+                    <h1>Levamos sua ideia para <span>as nuvens.</span></h1>
+                    <p>
+                        Na Oncloud, desenvolvemos soluções tecnológicas modernas, escaláveis e seguras para impulsionar o que realmente importa: o seu negócio.   
+                    </p>
+                
+                    <div class="bottom">
+                        <a href="#solucoes1" class="bottom-top">Nossas soluções</a>
+                        <a href="#Projetos" class="bottom-down">Conheça nossos projetos</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="imagemLateral">
+                <img src="img/FUNDOHERO.png" alt="Ilustração OnCloud" width="100%" height="400px">
+            </article>
+        </article>
+
+        <!-- Quem Somos / Sobre -->
+        <article class="quem" id="Valores">
+            <h2 class="titleCards">Quem somos?</h2>
+            <div class="cloud">
+                <h3>Oncloud</h3>
+                <p>Desenvolver páginas web incríveis é apenas o primeiro passo; o nosso verdadeiro destino é a inclusão universal. Somos especializados em transformar a experiência digital de usuários com baixa visão por meio de arquitetura de informação acessível, alto contraste inteligente, fontes legíveis e compatibilidade total com tecnologias assistivas. Elevamos o seu projeto a um novo patamar de alcance e responsabilidade social, tornando a web um espaço mais claro, justo e acessível para todos.</p>
+            </div>
+        </article>
+
+        <!-- Planos -->
+        <div class="solucoes" id="solucoes1">
+            <div><h2 class="titleCards">Nossos Planos e Preços</h2></div>
+            <div class="solu">
+
+                <!-- Plano Básico -->
+                <div class="solugrid">
+                    <div class="simg"><img src="./img/img/celular.png" alt="Plano Básico"></div>
+                    <div class="sh2"><h2>Plano Básico</h2></div>
+                    <div class="nada"><span class="preco">R$ 29/mês</span></div>
+                    <div class="sp"><p>Ideal para quem está começando e precisa de um site simples e rápido.</p></div>
+                    <div class="sa"><a href="#contato">Assinar Plano</a></div>
+                </div>
+
+                <!-- Plano Profissional -->
+                <div class="solugrid">
+                    <div class="simg"><img src="./img/img/computer.png" alt="Plano Profissional"></div>
+                    <div class="sh2"><h2>Plano Profissional</h2></div>
+                    <div class="nada"><span class="preco">R$ 59/mês</span></div>
+                    <div class="sp"><p>Plataformas completas e intuitivas para fazer o seu negócio crescer.</p></div>
+                    <div class="sa"><a href="#contato">Assinar Plano</a></div>
+                </div>
+
+                <!-- Plano Premium -->
+                <div class="solugrid">
+                    <div class="simg"><img src="./img/logo.on.png" alt="Plano Premium"></div>
+                    <div class="sh2"><h2>Plano Premium</h2></div>
+                    <div class="nada"><span class="preco">R$ 99/mês</span></div>
+                    <div class="sp"><p>Aplicativos e sistemas em nuvem com alta qualidade e suporte total.</p></div>
+                    <div class="sa"><a href="#contato">Assinar Plano</a></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Vídeo Institucional -->
+        <article id="video" class="video">
+            <div>
+                <h2 class="titleCards">Nossa Empresa em Ação</h2>
+            </div>
+            <video width="1200" controls>
+                <source src="../video/video.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeos.
+            </video>
+        </article>
+
+        <!-- Carrossel de Projetos -->
+        <div class="titulo-projetos" id="Projetos">
+            Nossos Projetos
+        </div>
+        <div class="grupo-sites">
+            <div class="carrossel" id="projetos">
+
+                <!-- 1. Moda|Lifestyle -->
+                <div class="sites">
+                    <div class="site-card">
+                        <img src="img/icones projetos/moda-icon.png.jpg" alt="Moda" class="icone-site">
+                        <h1 class="titulo-site">Moda|Lifestyle</h1>
+                        <h3 class="creditos">Feito por:<br>Sophia Magalhães</h3>
+                        <div class="detalhes-card">
+                            <p class="body-text">
+                                Plataforma dedicada ao universo da moda e estilo de vida. Apresenta tendências e combinações de cores que inspiram em um visual moderno e minimalista.
+                            </p>
+                        </div>
+                        <button class="visitar-site">
+                            <a href="https://cicuta100mg.github.io/ModaLifestyle1/" target="_blank" rel="noopener noreferrer">Visitar site</a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 2. Plants vs Zombies -->
+                <div class="sites">
+                    <div class="site-card">
+                        <img src="img/icones projetos/pvz-icon.png.webp" alt="Plants vs Zombies" class="icone-site">
+                        <h1 class="titulo-site">Plants vs Zombies</h1>
+                        <h3 class="creditos">Feito por:<br>Emiliano</h3>
+                        <div class="detalhes-card">
+                            <p class="body-text">
+                                Site dedicado à famosa franquia de jogos. Apresenta informações sobre os principais títulos da série em uma navegação simples e intuitiva para os fãs.
+                            </p>
+                        </div>
+                        <button class="visitar-site">
+                            <a href="https://cicuta100mg.github.io/PlantsVsZombie/" target="_blank" rel="noopener noreferrer">Visitar site</a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 3. Harry Potter -->
+                <div class="sites">
+                    <div class="site-card">
+                        <img src="img/icones projetos/harrypotter-icon.png.jpg" alt="Harry Potter" class="icone-site">
+                        <h1 class="titulo-site">Harry Potter</h1>
+                        <h3 class="creditos">Feito por:<br>Kauane</h3>
+                        <div class="detalhes-card">
+                            <p class="body-text">
+                                Uma imersão no Mundo Bruxo de J. K. Rowling. Explore a história, os filmes e as casas de Hogwarts em uma experiência envolvente sobre a saga.
+                            </p>
+                        </div>
+                        <button class="visitar-site">
+                            <a href="https://cicuta100mg.github.io/harrypottersite/" target="_blank" rel="noopener noreferrer">Visitar site</a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 4. TTJ|Games -->
+                <div class="sites">
+                    <div class="site-card">
+                        <img src="img/icones projetos/ttj-icon.png.png" alt="TTJ Games" class="icone-site">
+                        <h1 class="titulo-site">TTJ|Games</h1>
+                        <h3 class="creditos">Feito por:<br>Pietro</h3>
+                        <div class="detalhes-card">
+                            <p class="body-text">
+                                Plataforma voltada ao universo dos jogos eletrônicos e entretenimento digital. Oferece catálogos interativos, referências e novidades do mundo gamer.
+                            </p>
+                        </div>
+                        <button class="visitar-site">
+                            <a href="https://cicuta100mg.github.io/TTJ/" target="_blank" rel="noopener noreferrer">Visitar site</a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 5. Primatas Sul-Americanos -->
+                <div class="sites">
+                    <div class="site-card">
+                        <img src="img/icones projetos/macacos-icon.png.jpg" alt="Primatas" class="icone-site">
+                        <h1 class="titulo-site">Primatas Sul-Americanos</h1>
+                        <h3 class="creditos">Feito por:<br>Beatriz</h3>
+                        <div class="detalhes-card">
+                            <p class="body-text">
+                                Projeto focado na preservação ambiental e fauna silvestre. Traz conteúdos de conscientização, espécies ameaçadas e proteção à natureza.
+                            </p>
+                        </div>
+                        <button class="visitar-site">
+                            <a href="https://cicuta100mg.github.io/PrimatasPorRegi-o/" target="_blank" rel="noopener noreferrer">Visitar site</a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 6. Fermenton|Confeitaria -->
+                <div class="sites">
+                    <div class="site-card">
+                        <img src="img/icones projetos/confeitaria-icon.png.jpg" alt="Confeitaria" class="icone-site">
+                        <h1 class="titulo-site">Fermenton|Confeitaria</h1>
+                        <h3 class="creditos">Feito por:<br>Sofia Lacerda</h3>
+                        <div class="detalhes-card">
+                            <p class="body-text">
+                                Site focado na culinária artesanal e panificação. Reúne novidades do cardápio e combinações para ajudar a escolher doces, bebidas e salgados.
+                            </p>
+                        </div>
+                        <button class="visitar-site">
+                            <a href="https://cicuta100mg.github.io/FermentonConfeitaria/" target="_blank" rel="noopener noreferrer">Visitar site</a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 7. Clash|Royale -->
+                <div class="sites">
+                    <div class="site-card">
+                        <img src="img/icones projetos/clash-icon.png.png" alt="Clash Royale" class="icone-site">
+                        <h1 class="titulo-site">Clash|Royale</h1>
+                        <h3 class="creditos">Feito por:<br>Daniel</h3>
+                        <div class="detalhes-card">
+                            <p class="body-text">
+                                Voltado para jogos de estratégia e arenas competitivas. Apresenta combinações de cartas e dicas para montar decks e dominar as partidas.
+                            </p>
+                        </div>
+                        <button class="visitar-site">
+                            <a href="https://cicuta100mg.github.io/ClashRoyale/" target="_blank" rel="noopener noreferrer">Visitar site</a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 8. Maneirão|Filmes -->
+                <div class="sites">
+                    <div class="site-card">
+                        <img src="img/icones projetos/filmes-icon.png.jpg" alt="Maneirão Filmes" class="icone-site">
+                        <h1 class="titulo-site">Maneirão|Filmes</h1>
+                        <h3 class="creditos">Feito por:<br>Ravi</h3>
+                        <div class="detalhes-card">
+                            <p class="body-text">
+                                Portal focado no universo do cinema e audiovisual. Reúne recomendações, novidades das telonas e catálogos para maratonar grandes produções.
+                            </p>
+                        </div>
+                        <button class="visitar-site">
+                            <a href="https://cicuta100mg.github.io/Maneir-oFilmes/" target="_blank" rel="noopener noreferrer">Visitar site</a>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Equipe / Cards -->
+        <section id="sobreNos">
+            <div class="titleCards">
+                <h2>Um pouco sobre nós</h2>
+            </div>
+            
+            <div class="container-cards">
+                
+                <article class="card">
+                    <div class="face frente">
+                        <img src="img/membrosIMG/bia.jpeg" alt="Bia">
+                    </div>
+                    <div class="face traz conteudoC">
+                        <div class="conteudoTop">
+                            <h2 class="titleC">Dev</h2>
+                            <div><h3>Bia</h3></div>
+                        </div>
+                        <div class="description">
+                            Desenvolvedora que transforma ideias em sites funcionais.
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="card">
+                    <div class="face frente">
+                        <img src="img/membrosIMG/dani.jpeg" alt="Daniel">
+                    </div>
+                    <div class="face traz conteudoC">
+                        <div class="conteudoTop">
+                            <h2 class="titleC">Product Owner</h2>
+                            <div><h3>Daniel</h3></div>
+                        </div>
+                        <div class="description">
+                            "só sei que nada sei".
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="face frente">
+                        <img src="img/membrosIMG/emi.jpeg" alt="Emiliano">
+                    </div>
+                    <div class="face traz conteudoC">
+                        <div class="conteudoTop">
+                            <h2 class="titleC">Dev</h2>
+                            <div><h3>Emiliano</h3></div>
+                        </div>
+                        <div class="description">
+                            Solução sem confusão, essa é minha meta.
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="face frente">
+                        <img src="img/membrosIMG/eu.jpeg" alt="Pietro">
+                    </div>
+                    <div class="face traz conteudoC">
+                        <div class="conteudoTop">
+                            <h2 class="titleC">Dev</h2>
+                            <div><h3>Pietro</h3></div>
+                        </div>
+                        <div class="description">
+                            O código é a resposta, mas meu foco é a pergunta.
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="face frente">
+                        <img src="img/membrosIMG/kauane.jpeg" alt="Kauane">
+                    </div>
+                    <div class="face traz conteudoC">
+                        <div class="conteudoTop">
+                            <h2 class="titleC">Scrum Master</h2>
+                            <div><h3>Kauane</h3></div>
+                        </div>
+                        <div class="description">
+                            Onde existe caos, eu encontro a rota.
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="face frente">
+                        <img src="img/membrosIMG/ravi.jpeg" alt="Ravi">
+                    </div>
+                    <div class="face traz conteudoC">
+                        <div class="conteudoTop">
+                            <h2 class="titleC">Dev</h2>
+                            <div><h3>Ravi</h3></div>
+                        </div>
+                        <div class="description">
+                            codigos? até vai quando eu não estou dançando.
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="face frente">
+                        <img src="img/membrosIMG/sofia.jpeg" alt="Sofia">
+                    </div>
+                    <div class="face traz conteudoC">
+                        <div class="conteudoTop">
+                            <h2 class="titleC">Dev</h2>
+                            <div><h3>Sofia Lacerda</h3></div>
+                        </div>
+                        <div class="description">
+                            Encontro meu caminho a cada página.
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="face frente">
+                        <img src="img/membrosIMG/sophia.jpeg" alt="Sophia">
+                    </div>
+                    <div class="face traz conteudoC">
+                        <div class="conteudoTop">
+                            <h2 class="titleC">Dev</h2>
+                            <div><h3>Sophia</h3></div>
+                        </div>
+                        <div class="description">
+                            Tenho 30 abas abertas... na mente.
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="face frente">
+                        <img src="img/membrosIMG/gabriel.jpeg" alt="Gabriel">
+                    </div>
+                    <div class="face traz conteudoC">
+                        <div class="conteudoTop">
+                            <h2 class="titleC">Dev</h2>
+                            <div><h3>Gabriel</h3></div>
+                        </div>
+                        <div class="description">
+                            Menos complicação, mais desenvolvimento.
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="footer">
+        <div class="footer-banner">
+            <p>
+                OnCloud — Levamos sua ideia para as nuvens. Desenvolvemos soluções tecnológicas modernas, escaláveis e seguras para impulsionar o seu negócio.
+            </p>
+            <div class="icones">
+                <a href="https://www.instagram.com/o_ncloud?igsh=MWM3bm1iMzRlaWtwMQ==" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#footer" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#footer" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+        <nav class="links-Nav">
+            <div><h3>Links de Navegação</h3></div>
+            <a href="#">Início</a>
+            <a href="#sobreNos">Sobre nós</a>
+            <a href="#Valores">Valores</a>
+            <a href="#Projetos">Projetos</a>
+            <a href="./Site2/index.html" target="_blank">Contatos</a>
+        </nav>
+
+        <nav class="links-Nav">
+            <div><h3>Informações de contato</h3></div>
+            <a href="mailto:nuvem@oncloud.com.br">nuvem@oncloud.com.br</a>
+            <a href="tel:1699560291124">Telefone: (16) 99560-2911</a>
+            <a href="#footer">Atendimento: Seg. a Sex., das 9h às 18h</a>
+        </nav>
+
+        <nav class="links-Nav">
+            <div><h3>Termos e direitos</h3></div>
+            <a href="#footer">Política de Privacidade</a>
+            <a href="#footer">Termos de Uso</a>
+            <a href="#footer">Referências: Font Awesome</a>
+        </nav>
+
+        <div class="footer-copyright">
+            <p>© 2026 OnCloud. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/15651e1e54.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
